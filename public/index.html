@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.svg" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta name="viewport" initial-scale="1.0" content="width=device-width" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Unlock the power of data with Dview Technologies. Elevate your business through advanced data engineering solutions."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.svg" />
+
+    <meta property="og:title" content="Dview Technologies" />
+    <meta
+      property="og:description"
+      content="Unlock the power of data with Dview Technologies. Elevate your business through advanced data engineering solutions."
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/DviewLogo.png" />
+    <meta property="og:url" content="https://dview-ui.dview.io" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Dview Technologies" />
+    <meta
+      name="twitter:description"
+      content="Unlock the power of data with Dview Technologies. Elevate your business through advanced data engineering solutions."
+    />
+    <meta name="twitter:image" content="%PUBLIC_URL%/DviewLogo.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Dview Technologies</title>
+    <script>
+      "use strict";
+
+      !(function () {
+        var t = (window.driftt = window.drift = window.driftt || []);
+        if (!t.init) {
+          if (t.invoked)
+            return void (
+              window.console &&
+              console.error &&
+              console.error("Drift snippet included twice.")
+            );
+          (t.invoked = !0),
+            (t.methods = [
+              "identify",
+              "config",
+              "track",
+              "reset",
+              "debug",
+              "show",
+              "ping",
+              "page",
+              "hide",
+              "off",
+              "on",
+            ]),
+            (t.factory = function (e) {
+              return function () {
+                var n = Array.prototype.slice.call(arguments);
+                return n.unshift(e), t.push(n), t;
+              };
+            }),
+            t.methods.forEach(function (e) {
+              t[e] = t.factory(e);
+            }),
+            (t.load = function (t) {
+              var e = 3e5,
+                n = Math.ceil(new Date() / e) * e,
+                o = document.createElement("script");
+              (o.type = "text/javascript"),
+                (o.async = !0),
+                (o.crossorigin = "anonymous"),
+                (o.src =
+                  "https://js.driftt.com/include/" + n + "/" + t + ".js");
+              var i = document.getElementsByTagName("script")[0];
+              i.parentNode.insertBefore(o, i);
+            });
+        }
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("gew64rcsx5fu");
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
