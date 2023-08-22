@@ -1,0 +1,26 @@
+{
+  "short_name": "Dview",
+  "name": "Dview Technologies",
+  "icons": [
+    {
+      "src": "DviewIcon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "DviewLogo.png",
+      "type": "image/png",
+      "sizes": "628x314"
+    },
+    {
+      "src": "DviewLogo.png",
+      "type": "image/png",
+      "sizes": "628x314"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#121827",
+  "background_color": "#121827"
+}
+
